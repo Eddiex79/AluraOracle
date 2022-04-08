@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();		
+}
+    var portugueses = 1500;
+    var geracao= 2022;
+    var anosPassados= geracao - portugueses;
+    var resultado = anosPassados / 28;
+
+
+    	mostra("Desde a invensão do descobrimento do Brasil já passaram " + (anosPassados) + " anos");
+    
+ 		mostra("E desde o ano de 1500 já passaram " + Math.round(resultado) + " gerações");
+
+
+    	
+</script>
