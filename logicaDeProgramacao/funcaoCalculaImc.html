@@ -12,10 +12,10 @@
     var alturaFlavio = 1.71;
 
     function calculaImc(altura, peso) {
-        var imc = peso / (altura * altura) + 1;
-        mostra("O imc calculado é " +
-            Math.round(imc));
+        var imc = peso / (altura * altura);
+        return +(Math.round(imc));
     }
+
     calculaImc(1.71, 73);
     calculaImc(1.72, 68);
 </script>
