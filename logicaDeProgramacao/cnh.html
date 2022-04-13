@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    var nome = prompt(" Informe o seu nome");
+    //var temCarteira = prompt(nome + ", Tem carteira? Responda S ou N");
+    var idade = parseInt(prompt(nome + ", Qual é sua idade?"));
+
+    if (idade >= 18 && idade <= 64) {
+        mostra("Você está em idade permitida para tirar sua *CNH* (Carteira Nacional de Habilitação), para começar a dirigir");
+    }
+    if (idade <= 17) {
+        mostra("Sua idade não é permitida para tirar sua *CNH* (Carteira Nacional de Habilitação), para começar a dirigir dirigir");
+    }
+    if (idade >= 65) {
+           mostra("De acordo com o Código de Trânsito Brasileiro não existe uma idade limítrofe para que deixemos de dirigir. O que muda é o prazo para a renovação da *CNH*(Carteira Nacional de Habilitação),que muda quando se completa 65 anos.Ele deixa de ocorrer a cada cinco anos,passando a ser exigido de três em três anos.");}
+</script>
