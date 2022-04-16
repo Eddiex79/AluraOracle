@@ -1,0 +1,34 @@
+    <meta charset="UTF-8">
+
+    <script>
+        function pulaLinha() {
+
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+
+            document.write(frase);
+            pulaLinha();
+        }
+
+        function sorteia (n){
+            return Math.round(Math.random()*n);
+        }
+        var numeroPensado = sorteia(10);
+
+        var chute = parseInt(prompt("Adivinhe o número entre 1 e 10"));
+
+        if (numeroPensado == chute) {
+            mostra("Você acertou!");
+        }
+        if (chute > numeroPensado) {
+            mostra("Você errou, porque o número pensado era menor que " + chute);
+        } else{
+            if (chute > numeroPensado){
+                mostra("voce errou, porque o número pensado era menor que " + chute)
+            }else{
+                mostra("voce errou, porque o número pensado era maior que " + chute)
+        }}
+    </script>
+
