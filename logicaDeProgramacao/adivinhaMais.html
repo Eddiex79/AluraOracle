@@ -8,15 +8,15 @@ var segredo = Math.round(Math.random()*10);
 var input = document.querySelector("input");
 input.focus();
 function verifica(){
-	if(input.value==segredo){
-		alert("Você ACERTOU");
-	}else{
-		alert("Você ERROU!!!!");
+  if(input.value==segredo){
+	3alert("Você ACERTOU");
+  }else{
+  alert("Você ERROU!!!!");
 	}
-	//limpa a caixa de dialogo
-	input.value="";
-	//põe o curso piscante antes de clicar com o mouse
-	input.focus();
+  //limpa a caixa de dialogo
+  input.value="";
+  //põe o curso piscante antes de clicar com o mouse
+  input.focus();
 }
 var button = document.querySelector("button");
 button.onclick = verifica;
