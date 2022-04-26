@@ -2,18 +2,24 @@
 
 <script>
         var tela = document.querySelector('canvas');
-        var pincel = tela.getContext('2d')
+        var pincel = tela.getContext('2d');
 
-        pincel.fillStyle='grey'
-        pincel.fillRect(0, 0, 600, 400)
+        pincel.fillStyle='grey';
+        pincel.fillRect(0, 0, 600, 400);
 
-        function exibeAlerta(evento){
-            var x = evento.pagex
-            var y = evento.pagey
+        function desenhaCirculo(evento){
+            //                   corrige eixo(x e y no 0,0)
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            pincel.fillStyle = 'blue';
+            pincel.beginPath();
+            pincel.arc(x, y, 10, 0, 2*3.14);
+            pincel.fill();
+            consolo.log(x + ',' + y);
 
-            alert('x + ','+ y)
+            alert(x + ','+ y)
         }
-        tela.onclick = exibeAlerta
+        tela.onclick = desenhaCirculo;
         
 </script>
     
